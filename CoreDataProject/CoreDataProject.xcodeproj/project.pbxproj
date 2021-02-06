@@ -11,10 +11,23 @@
 		9D15A5CE25CDC4EB00085C87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A5CD25CDC4EB00085C87 /* SceneDelegate.swift */; };
 		9D15A5D025CDC4EB00085C87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A5CF25CDC4EB00085C87 /* ViewController.swift */; };
 		9D15A5D325CDC4EB00085C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A5D125CDC4EB00085C87 /* Main.storyboard */; };
-		9D15A5D625CDC4EB00085C87 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A5D425CDC4EB00085C87 /* CoreDataProject.xcdatamodeld */; };
+		9D15A5D625CDC4EB00085C87 /* NotebooksModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A5D425CDC4EB00085C87 /* NotebooksModel.xcdatamodeld */; };
 		9D15A5D825CDC4EC00085C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A5D725CDC4EC00085C87 /* Assets.xcassets */; };
 		9D15A5DB25CDC4EC00085C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15A5D925CDC4EC00085C87 /* LaunchScreen.storyboard */; };
+		9D15A5E425CDDB4600085C87 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15A5E325CDDB4600085C87 /* DataController.swift */; };
+		9D44D43025CEAF7900F05FA9 /* CoreDataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D42F25CEAF7900F05FA9 /* CoreDataProjectTests.swift */; };
+		9D44D44025CEBCDA00F05FA9 /* NotebookMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44D43F25CEBCDA00F05FA9 /* NotebookMO.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D44D43225CEAF7900F05FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D15A5C025CDC4EB00085C87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D15A5C725CDC4EB00085C87;
+			remoteInfo = CoreDataProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9D15A5C825CDC4EB00085C87 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +39,22 @@
 		9D15A5D725CDC4EC00085C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15A5DA25CDC4EC00085C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D15A5DC25CDC4EC00085C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D15A5E325CDDB4600085C87 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9D44D42D25CEAF7900F05FA9 /* CoreDataProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D44D42F25CEAF7900F05FA9 /* CoreDataProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectTests.swift; sourceTree = "<group>"; };
+		9D44D43125CEAF7900F05FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D44D43F25CEBCDA00F05FA9 /* NotebookMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookMO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D15A5C525CDC4EB00085C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D44D42A25CEAF7900F05FA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9D15A5CA25CDC4EB00085C87 /* CoreDataProject */,
+				9D44D42E25CEAF7900F05FA9 /* CoreDataProjectTests */,
 				9D15A5C925CDC4EB00085C87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				9D15A5C825CDC4EB00085C87 /* CoreDataProject.app */,
+				9D44D42D25CEAF7900F05FA9 /* CoreDataProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +92,20 @@
 				9D15A5D725CDC4EC00085C87 /* Assets.xcassets */,
 				9D15A5D925CDC4EC00085C87 /* LaunchScreen.storyboard */,
 				9D15A5DC25CDC4EC00085C87 /* Info.plist */,
-				9D15A5D425CDC4EB00085C87 /* CoreDataProject.xcdatamodeld */,
+				9D15A5D425CDC4EB00085C87 /* NotebooksModel.xcdatamodeld */,
+				9D15A5E325CDDB4600085C87 /* DataController.swift */,
+				9D44D43F25CEBCDA00F05FA9 /* NotebookMO.swift */,
 			);
 			path = CoreDataProject;
+			sourceTree = "<group>";
+		};
+		9D44D42E25CEAF7900F05FA9 /* CoreDataProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D44D42F25CEAF7900F05FA9 /* CoreDataProjectTests.swift */,
+				9D44D43125CEAF7900F05FA9 /* Info.plist */,
+			);
+			path = CoreDataProjectTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +128,24 @@
 			productReference = 9D15A5C825CDC4EB00085C87 /* CoreDataProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9D44D42C25CEAF7900F05FA9 /* CoreDataProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D44D43625CEAF7900F05FA9 /* Build configuration list for PBXNativeTarget "CoreDataProjectTests" */;
+			buildPhases = (
+				9D44D42925CEAF7900F05FA9 /* Sources */,
+				9D44D42A25CEAF7900F05FA9 /* Frameworks */,
+				9D44D42B25CEAF7900F05FA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D44D43325CEAF7900F05FA9 /* PBXTargetDependency */,
+			);
+			name = CoreDataProjectTests;
+			productName = CoreDataProjectTests;
+			productReference = 9D44D42D25CEAF7900F05FA9 /* CoreDataProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +157,10 @@
 				TargetAttributes = {
 					9D15A5C725CDC4EB00085C87 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					9D44D42C25CEAF7900F05FA9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9D15A5C725CDC4EB00085C87;
 					};
 				};
 			};
@@ -118,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				9D15A5C725CDC4EB00085C87 /* CoreDataProject */,
+				9D44D42C25CEAF7900F05FA9 /* CoreDataProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +194,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D44D42B25CEAF7900F05FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,14 +208,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D15A5E425CDDB4600085C87 /* DataController.swift in Sources */,
 				9D15A5D025CDC4EB00085C87 /* ViewController.swift in Sources */,
+				9D44D44025CEBCDA00F05FA9 /* NotebookMO.swift in Sources */,
 				9D15A5CC25CDC4EB00085C87 /* AppDelegate.swift in Sources */,
-				9D15A5D625CDC4EB00085C87 /* CoreDataProject.xcdatamodeld in Sources */,
+				9D15A5D625CDC4EB00085C87 /* NotebooksModel.xcdatamodeld in Sources */,
 				9D15A5CE25CDC4EB00085C87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D44D42925CEAF7900F05FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D44D43025CEAF7900F05FA9 /* CoreDataProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D44D43325CEAF7900F05FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D15A5C725CDC4EB00085C87 /* CoreDataProject */;
+			targetProxy = 9D44D43225CEAF7900F05FA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D15A5D125CDC4EB00085C87 /* Main.storyboard */ = {
@@ -323,6 +409,46 @@
 			};
 			name = Release;
 		};
+		9D44D43425CEAF7900F05FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LXPJ38PN5;
+				INFOPLIST_FILE = CoreDataProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peresapy.CoreDataProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataProject.app/CoreDataProject";
+			};
+			name = Debug;
+		};
+		9D44D43525CEAF7900F05FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LXPJ38PN5;
+				INFOPLIST_FILE = CoreDataProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peresapy.CoreDataProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataProject.app/CoreDataProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,16 +470,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9D44D43625CEAF7900F05FA9 /* Build configuration list for PBXNativeTarget "CoreDataProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D44D43425CEAF7900F05FA9 /* Debug */,
+				9D44D43525CEAF7900F05FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9D15A5D425CDC4EB00085C87 /* CoreDataProject.xcdatamodeld */ = {
+		9D15A5D425CDC4EB00085C87 /* NotebooksModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9D15A5D525CDC4EB00085C87 /* CoreDataProject.xcdatamodel */,
 			);
 			currentVersion = 9D15A5D525CDC4EB00085C87 /* CoreDataProject.xcdatamodel */;
-			path = CoreDataProject.xcdatamodeld;
+			path = NotebooksModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
