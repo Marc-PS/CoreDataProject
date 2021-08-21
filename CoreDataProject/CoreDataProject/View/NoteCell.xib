@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="101" id="i9R-8h-Xeu" customClass="NoteCell" customModule="CoreDataProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i9R-8h-Xeu" id="oq1-Nh-vK4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ThL-Tx-mHo">
+                        <rect key="frame" x="10" y="5" width="300" height="91"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lw6-zl-2HI">
+                                <rect key="frame" x="0.0" y="5.5" width="80" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rYH-Wo-qgv">
+                                        <rect key="frame" x="0.0" y="0.5" width="80" height="79"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="fLA-rw-ccz"/>
+                                            <constraint firstAttribute="height" constant="80" id="nWl-pO-ya9"/>
+                                        </constraints>
+                                        <imageReference key="image" image="doc.circle.fill" catalog="system" symbolScale="medium"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iUh-8f-EgC">
+                                <rect key="frame" x="80" y="25" width="113" height="41"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-st-DZ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-8B-HyB">
+                                                <rect key="frame" x="8" y="0.0" width="97" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbJ-zF-WoI">
+                                                <rect key="frame" x="8" y="20.5" width="97" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PbJ-zF-WoI" firstAttribute="height" secondItem="QU7-8B-HyB" secondAttribute="height" id="4Of-02-RbY"/>
+                                            <constraint firstItem="QU7-8B-HyB" firstAttribute="leading" secondItem="jFC-st-DZ9" secondAttribute="leading" constant="8" id="I5r-df-l0C"/>
+                                            <constraint firstItem="PbJ-zF-WoI" firstAttribute="leading" secondItem="jFC-st-DZ9" secondAttribute="leading" constant="8" id="ZZA-YV-DOT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b1f-se-h0G">
+                                <rect key="frame" x="193" y="11" width="107" height="69"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfG-bP-knZ">
+                                        <rect key="frame" x="19" y="0.0" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="IQx-e7-n7y"/>
+                                            <constraint firstAttribute="height" constant="69" id="vGk-sC-hqt"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <imageReference key="image" image="trash.circle" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="i9R-8h-Xeu" eventType="touchUpInside" id="7zG-QN-CYM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tfG-bP-knZ" secondAttribute="trailing" constant="19" id="dfQ-oZ-oGB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ThL-Tx-mHo" firstAttribute="leading" secondItem="oq1-Nh-vK4" secondAttribute="leading" constant="10" id="239-GD-s1P"/>
+                    <constraint firstAttribute="trailing" secondItem="ThL-Tx-mHo" secondAttribute="trailing" constant="10" id="3xd-eg-PJj"/>
+                    <constraint firstAttribute="bottom" secondItem="ThL-Tx-mHo" secondAttribute="bottom" constant="5" id="Yii-I0-f6Z"/>
+                    <constraint firstItem="ThL-Tx-mHo" firstAttribute="top" secondItem="oq1-Nh-vK4" secondAttribute="top" constant="5" id="tTw-Px-FW2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noteDate" destination="PbJ-zF-WoI" id="uha-yz-4Tn"/>
+                <outlet property="noteTitle" destination="QU7-8B-HyB" id="I0p-hl-hLd"/>
+            </connections>
+            <point key="canvasLocation" x="-101" y="-255"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doc.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="trash.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
